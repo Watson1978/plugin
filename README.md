@@ -1,4 +1,5 @@
-# RubyMotion command-line plugin template
+# plugin
+This is RubyMotion template of command-line plugin.
 
 ## Usage
 
