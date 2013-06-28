@@ -6,9 +6,7 @@ src = File.expand_path(File.join(File.dirname(__FILE__), "../command/<%= name %>
 dst = File.join(dir, "<%= name %>.rb")
 
 FileUtils.mkdir_p(dir) unless File.exist?(dir)
-FileUtils.rm dst if File.exist?(dst)
-FileUtils.ln_s src, dst
-
+FileUtils.ln_sf src, dst
 
 ### dummy ###
 require 'mkmf'
