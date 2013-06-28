@@ -1,0 +1,13 @@
+module Motion; module Project
+  class <%=
+command_name = name.split(/[-_]/)[-1]
+command_name.capitalize
+%>Command < Command
+    self.name = '<%= command_name %>'
+    self.help = 'TODO: description'
+
+    def run(args)
+    end
+
+  end
+end; end
